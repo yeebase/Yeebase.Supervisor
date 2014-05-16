@@ -1,0 +1,7 @@
+Yeebase:
+  Supervisor:
+    host: 'unix:///var/run/supervisor.sock'
+    port: -1
+    timeout: 30
+    username:
+    password:

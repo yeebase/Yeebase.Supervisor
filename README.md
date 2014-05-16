@@ -13,7 +13,7 @@ An example MessageQueue stack with TYPO3 Flow:
 http://supervisord.org/
 2. **Beanstalkd Message Queue**- manages what jobs to give to the workers (stupid, fast)
 http://kr.github.io/beanstalkd/
-3. **TYPO3.Jobqueue.Common** - flow package for putting jobs/functions into an asyncronous pipeline (using a simple @defer annotation)
+3. **TYPO3.Jobqueue.Common** - flow package for putting jobs/functions into an asyncronous pipeline (using a simple @Job\Defer annotation)
 https://git.typo3.org/Packages/TYPO3.Jobqueue.Common.git
 4. **TYPO3.Jobqueue.Beanstalkd** - The job queue implementation for Beanstalkd backends
 https://git.typo3.org/Packages/TYPO3.Jobqueue.Beanstalkd.git

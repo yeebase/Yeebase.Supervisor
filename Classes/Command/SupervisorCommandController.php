@@ -6,9 +6,9 @@ namespace Yeebase\Supervisor\Command;
  *                                                                        *
  *                                                                        */
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Cli\CommandController;
-use TYPO3\Flow\Log\SystemLoggerInterface;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Cli\CommandController;
+use Neos\Flow\Log\SystemLoggerInterface;
 use Yeebase\Supervisor\Service\SupervisorService;
 
 /**

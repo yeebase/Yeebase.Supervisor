@@ -6,8 +6,8 @@ namespace Yeebase\Supervisor\Service;
  *                                                                        *
  *                                                                        */
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Exception;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Exception;
 
 /**
  * Service that encapsulates interaction with the Supervisor API

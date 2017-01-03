@@ -1,25 +1,24 @@
 Yeebase.Supervisor
 =========
 
-With this TYPO3 Flow package you can control and monitor your supervisor daemon http://supervisord.org/api.html and all configured processes from your TYPO3 Flow application. You can use it to control workers that compute job queue tickets in a complex MessageQueue scenario.
+With this Flow package you can control and monitor your supervisor daemon http://supervisord.org/api.html and all configured processes from your Flow application. You can use it to control workers that compute job queue tickets in a complex MessageQueue scenario.
 
-Yeebase.Supervisor is an excellent addition to TYPO3 Flow's JobQueue.Common package and some MessageQueue backend like JobQueue.Beanstalkd:
+Yeebase.Supervisor is an excellent addition to Flow's Flowpack.JobQueue.Common package and some MessageQueue backend like Flowpack.JobQueue.Beanstalkd:
 
-You would like to defer jobs in a message queue and do things asyncronous within your TYPO3 Flow application?
+You would like to defer jobs in a message queue and do things asynchronous within your Flow application?
 
-An example MessageQueue stack with TYPO3 Flow:
+An example MessageQueue stack with Flow:
 
 1. **Supervisor Daemon** - monitors and controls your job queue workers (they are doing the hard work)
 http://supervisord.org/
 2. **Beanstalkd Message Queue**- manages what jobs to give to the workers (stupid, fast)
 http://kr.github.io/beanstalkd/
-3. **TYPO3.Jobqueue.Common** - flow package for putting jobs/functions into an asyncronous pipeline (using a simple @Job\Defer annotation)
-https://git.typo3.org/Packages/TYPO3.Jobqueue.Common.git
-4. **TYPO3.Jobqueue.Beanstalkd** - The job queue implementation for Beanstalkd backends
-https://git.typo3.org/Packages/TYPO3.Jobqueue.Beanstalkd.git
+3. **Flowpack.JobQueue.Common** - Flow package for putting jobs/functions into an asyncronous pipeline (using a simple @Job\Defer annotation)
+https://github.com/Flowpack/jobqueue-common
+4. **Flowpack.JobQueue.Beanstalkd** - The job queue implementation for Beanstalkd backends
+https://github.com/Flowpack/jobqueue-beanstalkd
 5. **Yeebase.Supervisor** client package - monitor and control all configured supervisor processes
-https://git.typo3.org/Packages/TYPO3.Jobqueue.Beanstalkd.git
-
+https://github.com/yeebase/Yeebase.Supervisor
 
 Installation & configuration
 ------------
@@ -67,7 +66,7 @@ Just type *./flow help supervisor* to get an overview of all available commands 
 Using the SupervisorService in your own classes
 ------------
 
-The main part of the Yeebase.Supervisor package is a the supervisor client class named "SupervisorService". In TYPO3 Flow you can just inject this class to your custom controllers via the following php code:
+The main part of the Yeebase.Supervisor package is a the supervisor client class named "SupervisorService". In Flow you can just inject this class to your custom controllers via the following php code:
 
 ```php
 ...
